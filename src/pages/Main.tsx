@@ -25,13 +25,19 @@ const Main = () => {
         </button>
 
         <button
+          className="gap-2 rounded-2xl bg-red-500 p-4 font-bold text-white"
           onClick={function (this: HTMLButtonElement) {
             console.log(this);
           }}
         >
           버튼1
         </button>
-        <button onClick={() => console.log(this)}>버튼2</button>
+        <button
+          className="gap-2 rounded-2xl bg-blue-500 p-4 font-bold text-white"
+          onClick={() => console.log(this)}
+        >
+          버튼2
+        </button>
       </div>
     </div>
   );

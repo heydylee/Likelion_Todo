@@ -7,7 +7,7 @@ import { postTodo } from "../api/apis";
 const TodoAdd = () => {
   const navigate = useNavigate();
   const [data, setData] = useState<newTodo>({ title: "", content: "" });
-  const titleRef = useRef<HTMLInputElement>(null); // ← ① ref 선언
+  const titleRef = useRef<HTMLInputElement>(null);
   useEffect(() => {
     titleRef.current?.focus();
   }, []);
